@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Preloader from "@/components/Preloader/Preloader";
 import Navbar from "@/components/Navbar/Navbar";
 import Hero from "@/components/Hero/Hero";
 import About from "@/components/About/About";
@@ -14,37 +12,23 @@ import Footer from "@/components/Footer/Footer";
 import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-  const [heroReady, setHeroReady] = useState(false);
-
-  useSmoothScroll(!loading);
+  useSmoothScroll();
 
   return (
-    <>
-      {loading && (
-        <Preloader
-          onComplete={() => {
-            setLoading(false);
-            setHeroReady(true);
-          }}
-        />
-      )}
-
-      <div className="relative bg-void bg-noise">
-        <Navbar />
-        <main>
-          <Hero ready={heroReady} />
-          <About />
-          <Identity />
-          <Skills />
-          <Certifications />
-          <Projects />
-          <Experience />
-          <Learning />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="relative bg-void bg-noise">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Identity />
+        <Skills />
+        <Certifications />
+        <Projects />
+        <Experience />
+        <Learning />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }

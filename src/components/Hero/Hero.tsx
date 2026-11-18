@@ -3,13 +3,9 @@ import { ArrowUpRight, ArrowDown } from "@phosphor-icons/react";
 import { gsap } from "@/lib/gsap";
 import NeuralVisual from "./NeuralVisual";
 
-interface HeroProps {
-  ready: boolean;
-}
+const HEADLINE_LINES = ["I build", "intelligent systems", "for the real world."];
 
-const HEADLINE_LINES = ["I build intelligent systems", "for the real world."];
-
-export default function Hero({ ready }: HeroProps) {
+export default function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
@@ -17,8 +13,6 @@ export default function Hero({ ready }: HeroProps) {
   const scrollHintRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!ready) return;
-
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
@@ -54,7 +48,7 @@ export default function Hero({ ready }: HeroProps) {
     });
 
     return () => ctx.revert();
-  }, [ready]);
+  }, []);
 
   return (
     <section
@@ -78,7 +72,7 @@ export default function Hero({ ready }: HeroProps) {
                   <span
                     key={wi}
                     className={`headline-word mr-3 inline-block ${
-                      li === 0 ? "" : "text-gradient glow-text"
+                      li === HEADLINE_LINES.length - 1 ? "text-gradient glow-text" : ""
                     }`}
                   >
                     {word}
@@ -119,7 +113,7 @@ export default function Hero({ ready }: HeroProps) {
               href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 px-2 text-sm text-text-tertiary transition-colors hover:text-cyan"
+              className="inline-flex items-center gap-1.5 px-2 text-sm text-text-secondary transition-colors hover:text-cyan"
             >
               Download Resume <ArrowUpRight size={14} />
             </a>

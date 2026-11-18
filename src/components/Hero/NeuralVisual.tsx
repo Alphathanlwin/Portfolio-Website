@@ -26,6 +26,7 @@ function buildNodes(): NodeDef[] {
 }
 
 export default function NeuralVisual() {
+  const rootRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const nodes = useMemo(buildNodes, []);
 
@@ -71,13 +72,13 @@ export default function NeuralVisual() {
         ease: "sine.inOut",
         transformOrigin: "50% 50%",
       });
-    }, svgRef);
+    }, rootRef);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <div className="relative mx-auto aspect-square w-full max-w-[480px]">
+    <div ref={rootRef} className="relative mx-auto aspect-square w-full max-w-[480px]">
       <div className="absolute inset-0 rounded-full bg-electric/10 blur-[100px]" />
       <div className="absolute inset-10 rounded-full bg-violet/10 blur-[90px]" />
 
