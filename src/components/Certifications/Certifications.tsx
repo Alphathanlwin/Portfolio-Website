@@ -8,7 +8,7 @@ export default function Certifications() {
   useGsapReveal(sectionRef, ".cert-card");
 
   return (
-    <section id="certifications" ref={sectionRef} className="relative py-28 sm:py-36">
+    <section id="certifications" ref={sectionRef} className="relative py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="mono-label mb-4 text-xs text-cyan">Certifications</p>
         <h2 className="max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight text-text-primary sm:text-4xl">

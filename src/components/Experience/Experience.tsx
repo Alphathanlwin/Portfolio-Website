@@ -7,7 +7,7 @@ export default function Experience() {
   useGsapReveal(sectionRef, ".milestone");
 
   return (
-    <section id="experience" ref={sectionRef} className="relative py-28 sm:py-36">
+    <section id="experience" ref={sectionRef} className="relative py-20 sm:py-24">
       <div className="mx-auto max-w-4xl px-6">
         <p className="mono-label mb-4 text-xs text-cyan">Timeline</p>
         <h2 className="max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight text-text-primary sm:text-4xl">

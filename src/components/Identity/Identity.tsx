@@ -17,7 +17,7 @@ export default function Identity() {
   useGsapReveal(sectionRef, ".identity-card");
 
   return (
-    <section ref={sectionRef} className="relative py-28 sm:py-36">
+    <section ref={sectionRef} className="relative py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="mono-label mb-4 text-xs text-cyan">Engineering Focus</p>
         <h2 className="max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight text-text-primary sm:text-4xl">

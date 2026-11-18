@@ -10,13 +10,13 @@
   --color-abyss: #080b14;
   --color-surface: #0d1120;
   --color-surface-2: #12182b;
-  --color-line: #1c2438;
-  --color-line-soft: #161d30;
+  --color-line: #2a3550;
+  --color-line-soft: #212a42;
 
   /* text */
   --color-text-primary: #eef1f8;
-  --color-text-secondary: #9aa4bc;
-  --color-text-tertiary: #626d89;
+  --color-text-secondary: #a8b2c8;
+  --color-text-tertiary: #8b95af;
 
   /* accents */
   --color-electric: #4d7cff;
@@ -109,10 +109,10 @@
   }
 
   .glass {
-    background: rgba(13, 17, 32, 0.55);
+    background: rgba(17, 23, 41, 0.7);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .glow-text {

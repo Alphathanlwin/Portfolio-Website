@@ -17,7 +17,7 @@ export default function About() {
   useGsapReveal(sectionRef, ".reveal");
 
   return (
-    <section id="about" ref={sectionRef} className="relative py-28 sm:py-36">
+    <section id="about" ref={sectionRef} className="relative py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
