@@ -8,6 +8,7 @@ export interface Project {
   focus: string;
   github?: string;
   demo?: string;
+  image?: string;
   featured?: boolean;
 }
 

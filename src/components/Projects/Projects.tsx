@@ -8,24 +8,20 @@ export default function Projects() {
   useGsapReveal(sectionRef, ".project-card", { y: 40, stagger: 0.1 });
 
   return (
-    <section id="projects" ref={sectionRef} className="relative py-28 sm:py-36">
+    <section id="projects" ref={sectionRef} className="relative py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <p className="mono-label mb-4 text-xs text-cyan">Selected Work</p>
-        <h2 className="max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight text-text-primary sm:text-4xl">
-          Things I've built.
+        <h2 className="font-display text-4xl font-semibold leading-tight tracking-tight text-text-primary sm:text-5xl">
+          Projects.
         </h2>
-        <p className="mt-4 max-w-xl text-base text-text-secondary">
-          Experiments, products and systems at the intersection of AI and software engineering.
+        <p className="mt-5 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg">
+          Real-world systems at the intersection of AI and software engineering — each built to
+          solve a concrete problem, with the stack and reasoning behind it.
         </p>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
-            <div
-              key={project.slug}
-              className={project.featured && i < 2 ? "md:col-span-2" : ""}
-            >
-              <ProjectCard project={project} index={i} />
-            </div>
+            <ProjectCard key={project.slug} project={project} index={i} />
           ))}
         </div>
       </div>
