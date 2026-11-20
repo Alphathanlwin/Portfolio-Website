@@ -25,7 +25,7 @@ export const milestones: Milestone[] = [
     org: "Early AI Projects",
     role: "Builder",
     description:
-      "Built a run of small, real GenAI projects to learn by shipping: a gift recommendation chatbot with OpenAI API and live web search, a movie recommendation RAG system with Supabase and pgvector, a ReAct-based travel AI agent, and a customer support AI agent using the Vercel AI SDK with RAG and tool calls.",
+      "Built a run of small, real GenAI projects to learn by shipping: a gift recommendation chatbot with OpenAI API and live web search, a movie recommendation RAG system with Supabase and pgvector, and a customer support AI agent using the Vercel AI SDK with RAG and tool calls.",
   },
   {
     date: "2026",

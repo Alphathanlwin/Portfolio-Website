@@ -1,4 +1,4 @@
-import { GithubLogo, LinkedinLogo, EnvelopeSimple, ArrowUpRight } from "@phosphor-icons/react";
+import { ArrowUpRight, EnvelopeSimple, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { socials } from "@/data/nav";
 
 export default function Footer() {
@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
 
       <p className="mx-auto mt-8 max-w-6xl px-6 text-xs text-text-tertiary">
-        Built with React, curiosity, and too much caffeine.
+        Built with React, Three.js, and too much caffeine.
       </p>
     </footer>
   );

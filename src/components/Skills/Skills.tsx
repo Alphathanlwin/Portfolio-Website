@@ -1,26 +1,27 @@
-import { useRef, type ComponentType } from "react";
-import { Database, Eye, Brain, Robot, PlugsConnected, MagnifyingGlass } from "@phosphor-icons/react";
+import type { ComponentType } from "react";
+import { Brain, Database, Eye, MagnifyingGlass, PlugsConnected, Robot } from "@phosphor-icons/react";
 import {
-  SiPython,
-  SiOpenjdk,
   SiCplusplus,
-  SiTypescript,
-  SiJavascript,
-  SiPytorch,
-  SiScikitlearn,
-  SiFastapi,
-  SiSpringboot,
-  SiJsonwebtokens,
-  SiPostgresql,
-  SiSupabase,
   SiDocker,
+  SiFastapi,
   SiGithub,
+  SiJavascript,
+  SiJsonwebtokens,
+  SiOpenjdk,
+  SiPostgresql,
+  SiPytorch,
   SiReact,
-  SiVite,
+  SiScikitlearn,
+  SiSpringboot,
+  SiSupabase,
   SiTailwindcss,
+  SiTypescript,
+  SiVite,
+  SiPython,
 } from "react-icons/si";
 import { skillGroups } from "@/data/skills";
-import { useGsapReveal } from "@/animations/useGsapReveal";
+import { Reveal } from "@/components/ui/Reveal";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 type SkillIcon = ComponentType<{ size?: number; className?: string; "aria-hidden"?: boolean }>;
 
@@ -52,20 +53,14 @@ const ICONS: Record<string, SkillIcon> = {
 };
 
 export default function Skills() {
-  const sectionRef = useRef<HTMLElement>(null);
-  useGsapReveal(sectionRef, ".skill-group");
-
   return (
-    <section id="skills" ref={sectionRef} className="relative py-20 sm:py-24">
+    <section id="skills" className="relative py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="mono-label mb-4 text-xs text-cyan">Technical Foundation</p>
-        <h2 className="max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight text-text-primary sm:text-4xl">
-          What I build with.
-        </h2>
+        <SectionHeading label="Technical Foundation" title="What I build with." />
 
         <div className="mt-14 grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-          {skillGroups.map((group) => (
-            <div key={group.domain} className="skill-group">
+          {skillGroups.map((group, i) => (
+            <Reveal key={group.domain} delay={(i % 3) * 0.06}>
               <h3 className="mono-label mb-5 text-[11px] text-text-tertiary">{group.domain}</h3>
               <div className="flex flex-wrap gap-2.5">
                 {group.items.map((item) => {
@@ -88,7 +83,7 @@ export default function Skills() {
                   );
                 })}
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

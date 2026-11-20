@@ -6,14 +6,12 @@ import Skills from "@/components/Skills/Skills";
 import Certifications from "@/components/Certifications/Certifications";
 import Projects from "@/components/Projects/Projects";
 import Experience from "@/components/Experience/Experience";
+import Awards from "@/components/Awards/Awards";
 import Learning from "@/components/Learning/Learning";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
-import { useSmoothScroll } from "@/hooks/useSmoothScroll";
 
 export default function App() {
-  useSmoothScroll();
-
   return (
     <div className="relative bg-void bg-noise">
       <Navbar />
@@ -25,6 +23,7 @@ export default function App() {
         <Certifications />
         <Projects />
         <Experience />
+        <Awards />
         <Learning />
         <Contact />
       </main>

@@ -16,8 +16,8 @@ export const certifications: Certification[] = [
     date: "Apr 2026",
   },
   {
-    name: "AI & ML Scholars — 2026 Challenge Completion",
-    issuer: "AWS × Udacity",
+    name: "Google AI Professional Certificate",
+    issuer: "Google",
     date: "2026",
   },
   {

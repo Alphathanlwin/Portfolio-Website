@@ -25,8 +25,8 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "ohas",
-    name: "OHAS",
+    slug: "pyonecare",
+    name: "PyoneCare",
     problem: "Early dental screening is inaccessible and opaque — patients get results with no reasoning.",
     description:
       "Oral Health Advisory System: an explainable AI oral health assessment platform combining a Prolog rule-based expert system with computer vision for symptom-driven dental screening.",
@@ -36,15 +36,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "movie-rag",
-    name: "Movie Recommendation RAG",
-    problem: "Keyword search fails to capture the semantic nuance of what people actually want to watch.",
+    slug: "community-issues",
+    name: "Community Issues Reporting System",
+    problem: "Local communities lack a structured channel to report and track civic issues.",
     description:
-      "An AI recommendation system combining semantic retrieval with a vector database to surface movies by meaning, not just metadata.",
-    stack: ["Supabase", "pgvector", "LLM API", "Python"],
-    type: "RAG · Recommender System",
-    focus: "RAG, embeddings, vector search, recommendation systems.",
-    featured: true,
+      "A full-stack system for reporting, triaging, and managing community issues with role-based authentication.",
+    stack: ["React", "Spring Boot", "PostgreSQL"],
+    type: "Full-Stack",
+    focus: "Software engineering, backend architecture, authentication, database design.",
   },
   {
     slug: "support-agent",
@@ -58,16 +57,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "travel-agent",
-    name: "Travel AI Agent",
-    problem: "Planning a trip means juggling search, comparison, and reasoning across many disconnected sources.",
-    description:
-      "A ReAct-pattern AI agent that reasons step by step, calling tools to search and compare options before producing a coherent travel plan.",
-    stack: ["Python", "LLM API", "ReAct"],
-    type: "AI Agents",
-    focus: "Agentic reasoning, tool use, the ReAct pattern.",
-  },
-  {
     slug: "gift-chatbot",
     name: "Gift Recommendation Chatbot",
     problem: "Choosing a thoughtful gift under time pressure is a surprisingly hard search problem.",
@@ -78,13 +67,14 @@ export const projects: Project[] = [
     focus: "Prompt engineering, conversational AI, product thinking.",
   },
   {
-    slug: "community-issues",
-    name: "Community Issues Reporting System",
-    problem: "Local communities lack a structured channel to report and track civic issues.",
+    slug: "movie-rag",
+    name: "Movie Recommendation RAG",
+    problem: "Keyword search fails to capture the semantic nuance of what people actually want to watch.",
     description:
-      "A full-stack system for reporting, triaging, and managing community issues with role-based authentication.",
-    stack: ["React", "Spring Boot", "PostgreSQL"],
-    type: "Full-Stack",
-    focus: "Software engineering, backend architecture, authentication, database design.",
+      "An AI recommendation system combining semantic retrieval with a vector database to surface movies by meaning, not just metadata.",
+    stack: ["Supabase", "pgvector", "LLM API", "Python"],
+    type: "RAG · Recommender System",
+    focus: "RAG, embeddings, vector search, recommendation systems.",
+    featured: true,
   },
 ];
