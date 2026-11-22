@@ -57,14 +57,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "gift-chatbot",
-    name: "Gift Recommendation Chatbot",
-    problem: "Choosing a thoughtful gift under time pressure is a surprisingly hard search problem.",
+    slug: "garvesty",
+    name: "Garvesty",
+    problem:
+      "Farmers in Myanmar's Ayeyarwady Delta plan each season by trial and error, without accessible climate, soil, and water data.",
     description:
-      "A conversational recommendation system powered by the OpenAI API with real-time web search, narrowing down gift ideas through natural dialogue.",
-    stack: ["Python", "OpenAI API", "Web Search"],
-    type: "Conversational AI",
-    focus: "Prompt engineering, conversational AI, product thinking.",
+      "A climate-adaptive farming decision-support platform built for NASA Space Apps Challenge 2026. It maps individual fields from satellite imagery, fuses NASA POWER, GPM IMERG, SMAP, and MODIS data with SoilGrids to recommend crop rotations, compares traditional rice-to-rice farming against mung bean and black gram rotations in an interactive 3D farm simulation, and turns six farmer-first questions into a personalized planting plan in English and Burmese.",
+    stack: ["React", "FastAPI", "GIS", "NASA Earthdata", "3D Simulation", "Blender"],
+    type: "Climate-Tech · GIS · AI",
+    focus: "Geospatial AI, satellite data integration, 3D simulation, climate-adaptive decision support.",
+    featured: true,
   },
   {
     slug: "movie-rag",
