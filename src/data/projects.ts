@@ -62,7 +62,7 @@ export const projects: Project[] = [
     problem:
       "Farmers in Myanmar's Ayeyarwady Delta plan each season by trial and error, without accessible climate, soil, and water data.",
     description:
-      "A climate-adaptive farming decision-support platform built for NASA Space Apps Challenge 2026. It maps individual fields from satellite imagery, fuses NASA POWER, GPM IMERG, SMAP, and MODIS data with SoilGrids to recommend crop rotations, compares traditional rice-to-rice farming against mung bean and black gram rotations in an interactive 3D farm simulation, and turns six farmer-first questions into a personalized planting plan in English and Burmese.",
+      "A climate-adaptive farming decision-support platform from NASA Space Apps 2026 that fuses satellite imagery and NASA Earth data with SoilGrids to recommend crop rotations, compare them in an interactive 3D farm, and generate bilingual planting plans.",
     stack: ["React", "FastAPI", "GIS", "NASA Earthdata", "3D Simulation", "Blender"],
     type: "Climate-Tech · GIS · AI",
     focus: "Geospatial AI, satellite data integration, 3D simulation, climate-adaptive decision support.",
