@@ -22,6 +22,7 @@ export const projects: Project[] = [
     stack: ["React", "FastAPI", "PostgreSQL", "PostGIS", "ESP32", "Telegram API"],
     type: "AI · GIS · IoT",
     focus: "Computer vision, intelligent decision support, IoT integration, real-world agriculture.",
+    github: "https://github.com/Alphathanlwin/AgroGuard",
     featured: true,
   },
   {
@@ -33,6 +34,7 @@ export const projects: Project[] = [
     stack: ["React", "FastAPI", "PostgreSQL", "SWI-Prolog", "HuggingFace CV"],
     type: "Explainable AI · Expert Systems",
     focus: "Explainable AI, knowledge representation, expert systems, computer vision integration.",
+    github: "https://github.com/Alphathanlwin/PyoneCare",
     featured: true,
   },
   {
@@ -44,6 +46,7 @@ export const projects: Project[] = [
     stack: ["React", "Spring Boot", "PostgreSQL"],
     type: "Full-Stack",
     focus: "Software engineering, backend architecture, authentication, database design.",
+    github: "https://github.com/Alphathanlwin/Community-Issues-Reporting-System",
   },
   {
     slug: "support-agent",
@@ -66,6 +69,7 @@ export const projects: Project[] = [
     stack: ["React", "FastAPI", "GIS", "NASA Earthdata", "3D Simulation", "Blender"],
     type: "Climate-Tech · GIS · AI",
     focus: "Geospatial AI, satellite data integration, 3D simulation, climate-adaptive decision support.",
+    github: "https://github.com/Alphathanlwin/NASA",
     featured: true,
   },
   {
